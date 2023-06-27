@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <form action="success.html" style="text-align: center;">
+    <h1><b>Signup</b></h1>
+    <p>
+        <label for="username">Username</label>
+        <input type="text" id="field" onkeyup=" return validateUsername()" placeholder="Enter your username">
+        <span id="err"></span>
+    </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="field1" onkeyup=" return validateEmail()" placeholder="Enter your email">
+            <span id="err1"></span>
+        </p>
+        <p>
+            <label for="phone">Phone Number</label>
+            <input type="number" id="ph" onkeyup="return validatePhone()" placeholder="XXX-XXX-XXXX">
+            <span id="err3"></span>
+        </p>
+        <p>
+            <label for="">Password</label>
+            <input type="password" id="field2" onkeyup="return validatePass()" placeholder="Enter your password">
+            <span id="err2"></span>
+        </p>
+        <p>
+            <button onclick="return verify()">Submit</button>
+        </p>
+        <script src="signup.js"></script>
+    </form>
+</body>
+</html>

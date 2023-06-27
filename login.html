@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="success.html" style="text-align: center;">
+    <h1><b>Login</b></h1>
+    <p>
+        <label for="email">Email</label>
+        <input type="text" id="field1" onkeyup=" return validateEmail()" placeholder="Enter your email">
+        <span id="err1"></span>
+    </p>
+    <p>
+        <label for="">Password</label>
+        <input type="password" id="field2" onkeyup="return validatePass()" placeholder="Enter your password">
+        <span id="err2"></span>
+    </p>
+    <p>
+        <button onclick="return verify()">Submit</button>
+    </p>
+    <script src="login.js"></script>
+    </form>
+</body>
+</html>
